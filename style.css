@@ -1,0 +1,120 @@
+/* Set background color and font styles for the whole page */
+body {
+  background-color: #e1f7fa;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Style the header */
+.header {
+  background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba'); /* Add a background image */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: bold;
+  color: #2C7BE5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  text-shadow: 2px 2px #333; /* Add a text shadow to make the title stand out */
+}
+
+/* Style the main content area */
+.main {
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.box {
+  margin: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Add a box shadow to make the boxes stand out */
+  transition: all 0.3s ease-in-out; /* Add a transition for hover effects */
+}
+
+.box:hover {
+  transform: translateY(-5px); /* Add a hover effect to make the boxes move up slightly */
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5); /* Add a stronger box shadow on hover */
+}
+
+.box-image {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.box-content {
+  padding: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cards-remaining {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.box-content h3 {
+  text-transform: capitalize;
+}
+
+.claim-btn {
+  background-color: #f00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.claim-btn:hover {
+  background-color: #fff;
+  color: #f00;
+  border: 1px solid #f00;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.footer-text {
+  margin: 0;
+}

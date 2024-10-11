@@ -1,0 +1,158 @@
+/* CSS for GiftcardGenerator */
+
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+  background-color: #e1f7fa;
+}
+
+/* Center the container vertically and horizontally */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the box container */
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Style the title */
+.title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #2C7BE5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Style the form */
+#gift-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Style the label */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* Style the input */
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* Style the submit button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Style the link inside the button */
+.submit-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style the link inside the button on hover */
+.submit-btn a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .box {
+    padding: 20px;
+    margin: 50px 20px;
+  }
+
+  /* Center the box on mobile */
+  .container {
+    align-items: flex-start;
+  }
+
+  /* Increase font size for mobile */
+  .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* Adjust margin for form groups on mobile */
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  /* Add bottom margin for submit button on mobile */
+  .submit-btn {
+    margin-bottom: 15px;
+  }
+}
+
+/* Creative effects */
+.box {
+  position: relative;
+}
+
+.box::before,
+.box::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.box::before {
+  top: 10px;
+  left: 10px;
+}
+
+.box::after {
+  bottom: 10px;
+  right: 10px;
+}
