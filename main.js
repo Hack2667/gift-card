@@ -22,13 +22,10 @@ claimBtns.forEach(btn => {
   });
 });
 
-
-
 // code in verify page
 
 const form = document.getElementById("gift-form");
 const emailInput = document.getElementById("email");
-const robotCheckbox = document.getElementById("robot");
 const errorMessage = document.getElementById("error-message");
 const successMessage = document.getElementById("success-message");
 
@@ -40,12 +37,6 @@ form.addEventListener("submit", function(event) {
   // Validate email
   if (!validateEmail(email)) {
     showError("Please enter a valid email address");
-    return;
-  }
-  
-  // Verify checkbox
-  if (!robotCheckbox.checked) {
-    showError("Please verify that you're not a robot");
     return;
   }
   
@@ -73,5 +64,3 @@ function showSuccess(message) {
   successMessage.classList.add("show");
   errorMessage.classList.remove("show");
 }
-
-
